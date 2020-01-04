@@ -125,7 +125,7 @@ plt.xlabel('Number of Epochs')
 plt.show()
 
 omega = [w0_1, w1_1, w2_1]
-learning_rate = 0.1
+learning_rate = 0.1       
 print ('Initial weight: ' , omega)
 omegas=[]
 omegas, missed = perceptron_training(omega)
@@ -133,9 +133,5 @@ n_epochs = range(len(omegas)+1)
 fig, ax = plt.subplots(figsize=(10,10))
 ax.plot(n_epochs, missed+[0], c = 'green')
 plt.ylabel('Number of Misclassifications')
-plt.xlabel('Number of Epochs')
-plt.show()
-
-
 plt.xlabel('Number of Epochs')
 plt.show()
